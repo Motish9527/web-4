@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="w-screen h-screen flex gap-5 bg-gray-200 p-8" >
-          <div className="w-[480px] h-full rounded-2xl bg-white flex 
+          <div className="min-w-[320px] w-[320px] h-full rounded-2xl bg-white flex 
           justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden">
             <Image src={SelfImg} alt="self profile" className="w-[80px] h-[80px] rounded-full "  />
             <h1 className="mt-2">Motish</h1>
@@ -53,10 +53,10 @@ export default function RootLayout({ children }) {
 
             {/* 作品集 */}
             <div className="w-full flex flex-col gap-2">
-              <div className="w-full h-[84px] bg-gray-300 rounded-xl">睡太久了......</div>
-              <div className="w-full h-[84px] bg-gray-300 rounded-xl">好想回家</div>
-              <div className="w-full h-[84px] bg-gray-300 rounded-xl">學經二</div>
-              <div className="w-full h-[84px]  bg-red-700 rounded-xl">學經三</div>
+              <div className="w-full h-[84px] bg-red-400 rounded-xl">快好了......</div>
+              <div className="w-full h-[84px] bg-red-500 rounded-xl">要做完了......</div>
+              <div className="w-full h-[84px] bg-red-600 rounded-xl">正在努力中......</div>
+              <div className="w-full h-[84px]  bg-red-700 rounded-xl">想回家......</div>
 
 
             </div>

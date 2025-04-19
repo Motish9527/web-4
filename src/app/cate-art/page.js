@@ -1,13 +1,86 @@
 import Image from "next/image";
 import SelfImg from "@/../public/self.jpg";
+import Image01 from "@/../public/1.png"
+import Image02 from "@/../public/2.png"
+import Image03 from "@/../public/3.png"
+import Image04 from "@/../public/4.png"
+import Image05 from "@/../public/5.png"
+
+
 
 
 export default function CateArt() {
-  return (
-    <div className="w-full h-screen bg-gray-200 flex justify-center items-center ">
 
+  let dog = "bg-red-200";
+
+  return (
+    <div className="w-full h-full bg-white flex flex-col justify-start items-center rounded-2xl px-6 py-16">
+
+      {/* <Image src={Image01}/> */}
+  
+
+      <div className=" flex flex-col w-full">
+        <h1 className=" bg-black">ART</h1>
+        <h3>description</h3>
+      </div>
+
+      
+
+      <div className="flex flex-col w-full gap-4 mt-3">
+
+      
+      <div className="grid grid-cols-3 w-full gap-2 h-[33vh]">
+
+        <div className={`bg-amber-300 ${dog} rounded-2xl`}
+          style={
+         { backgroundImage: `url(${Image01.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}
+         }
+        >
+          One
+        </div>
+
+        <div className={`bg-amber-300 ${dog} rounded-2xl`}
+          style={
+         { backgroundImage: `url(${Image04.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}
+         }
+        >
+          Two
+        </div>
+
+        <div className={`bg-amber-300 ${dog} rounded-2xl`}
+          style={
+         { backgroundImage: `url(${Image03.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}
+         }
+        >
+          three
+        </div>
+        
+      </div>
+      
+      <div className="grid grid-cols-2 w-full gap-x-2 gap-y-4 h-[200px]  mt-6">
+        
+        <div className={`bg-amber-300 ${dog} rounded-2xl`}
+          style={
+         { backgroundImage: `url(${Image02.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}
+         }
+        >
+          four
+        </div>
+
+        
+        <div className={`bg-amber-300 ${dog} rounded-2xl`}
+          style={
+         { backgroundImage: `url(${Image05.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}
+         }
+        >
+          five
+        </div>
+        
+      </div>
+      </div>
+      
       <p>
-        ABOUT
+        Art
       </p>
       
     </div>
