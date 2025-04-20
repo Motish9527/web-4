@@ -25,7 +25,6 @@ export default function CateArt() {
       </div>
 
       
-
       <div className="flex flex-col w-full gap-4 mt-3">
 
       
