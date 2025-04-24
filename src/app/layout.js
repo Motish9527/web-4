@@ -59,24 +59,28 @@ export default function RootLayout({ children }) {
             <div className="w-full flex flex-col gap-2">
 
             <a href="/about">
-              <div className="w-full h-[84px] bg-red-400 rounded-xl">
-                ABOUT ME關於我
-                快好了......
+              <div className="w-full h-[84px] border-2 border-gray-800 bg-white rounded-xl hover:bg-gray-800 hover:text-white
+              flex justify-center items-center font-bold ">
+                ABOUT ME
               </div>
             </a>
             <a href="/cate-art">
-              <div className="w-full h-[84px] bg-red-500 rounded-xl">
-                ART要做完了......
-                </div>
+              <div className="w-full h-[84px] border-2 border-gray-800 bg-white rounded-xl hover:bg-gray-800 hover:text-white hover:px-7
+              flex justify-center items-center font-bold">
+              ART  
+
+              </div>
             </a>
             <a href="/cate-game">
-              <div className="w-full h-[84px] bg-red-600 rounded-xl">
-                GAME正在努力中......
-                </div>
+              <div className="w-full h-[84px] border-2 border-gray-800 bg-white rounded-xl hover:bg-gray-800 hover:text-white
+              flex justify-center items-center font-bold">
+                GAME
+              </div>
             </a> 
             <a href="/cate-interest">
-              <div className="w-full h-[84px]  bg-red-700 rounded-xl">
-                interest想回家......
+              <div className="w-full h-[84px] border-2 border-gray-800 bg-white rounded-xl hover:bg-gray-800 hover:text-white
+              flex justify-center items-center font-bold">
+                interest
               </div>
             </a> 
 

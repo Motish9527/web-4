@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SelfImg from "@/../public/self.jpg"; 
 
-export default function Home() {
+export default function About() {
   return (
     <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-8 text-gray-800 sm:flex">
       
