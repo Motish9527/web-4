@@ -14,14 +14,14 @@ export default function CateArt() {
   let dog = "bg-red-200";
 
   return (
-    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-16 sm:flex ">
+    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 pt-8 sm:flex ">
 
       {/* <Image src={Image01}/> */}
   
 
       <div className=" flex flex-col w-full">
-        <h1 className=" bg-black">ART</h1>
-        <h3>description</h3>
+        <h1 className="text-xl font-semibold border-b pb-1 mb-4">ART</h1>
+       
       </div>
 
       
