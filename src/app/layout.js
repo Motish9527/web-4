@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
             </Link>
             <h1 className="mt-2">Motish</h1>
 
-            <p className="max-w-[380px] text-center">個人簡介</p>
+            <p className="max-w-[380px] text-center">很愛拖，真的。</p>
 
             {/* SocailLinks */}
             <div className="flex gap-2 my-5">

@@ -14,7 +14,7 @@ export default function CateArt() {
   let dog = "bg-red-200";
 
   return (
-    <div className="w-full h-full bg-white flex flex-col justify-start items-center rounded-2xl px-6 py-16">
+    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-16 sm:flex ">
 
       {/* <Image src={Image01}/> */}
   
