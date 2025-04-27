@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
@@ -17,18 +18,29 @@ import Image8 from "@/../public/8.png";
 
 export default function CateArt() {
   const images = [Image1, Image2, Image3, Image5, Image6, Image7, Image8];
-  // -screen h-screen flex gap-5 bg-gray-200 p-8
+  const descriptions = [
+    "2023 TRPG自創角-管家雷文",
+    "2023 灌籃高手電影應援場(我喜歡的角色不打籃球......)",
+    "2022 靈能二創聚會小卡",
+    "2024 外星人舞台Ivan(還沒畫完...我愛拖)",
+    "2023 灌籃高手電影應援場(水戶洋平......)",
+    "2023 灌籃高手電影應援場(一灌再灌)",
+    "2022 漫畫惡之華二創",
+  ];
+
+  // 第幾張
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   return (
-    
     <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 pt-8 sm:flex overflow-auto">
       
       {/* 標題 */}
       <div className="flex flex-col w-full">
         <h1 className="text-xl font-semibold border-b pb-1 mb-4">ART</h1>
       </div>
-      {/* /w-full max-w-[300px] bg-white rounded-2xl p-6 flex flex-col items-center shadow-lg */}
+
       {/* 輪播區 */}
-      <div className="w-full  mx-auto mt-6">
+      <div className="w-full mx-auto mt-6">
         <Swiper
           modules={[Navigation, EffectCoverflow]}
           effect="coverflow"
@@ -37,12 +49,15 @@ export default function CateArt() {
           slidesPerView={3}
           loop={true}
           navigation
+          onSlideChange={(swiper) => {
+            setCurrentSlide(swiper.realIndex);  // 更新目前是第幾張
+          }}
           coverflowEffect={{
-            rotate: 0,         // 卡片旋轉角度（這邊設 0 保持平面）
-            stretch: 0,        // 每張之間的拉伸
-            depth: 100,        // 深度（越大，左右越小）
-            modifier: 2.5,     // 強度（越大，效果越誇張）
-            slideShadows: false, // 關掉陰影
+            rotate: 0,
+            stretch: 10,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
           }}
           className="w-full h-[400px]"
         >
@@ -61,7 +76,11 @@ export default function CateArt() {
           ))}
         </Swiper>
       </div>
+
+      {/* 作品文字 */}
+      <div className=" text-gray-800 text-center px-4 font-bold">
+        {descriptions[currentSlide]}
+      </div>
     </div>
-    
   );
 }
