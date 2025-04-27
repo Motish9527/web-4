@@ -17,10 +17,10 @@ import Image8 from "@/../public/8.png";
 
 export default function CateArt() {
   const images = [Image1, Image2, Image3, Image5, Image6, Image7, Image8];
-
+  // -screen h-screen flex gap-5 bg-gray-200 p-8
   return (
-    <div className="w-full mx-6 sm:mx-10">
-    <div className="hidden w-screen h-screen max-w-[1100px] bg-white flex-col justify-start items-center rounded-2xl px-6 pt-8 sm:flex">
+    
+    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 pt-8 sm:flex overflow-auto">
       
       {/* 標題 */}
       <div className="flex flex-col w-full">
@@ -28,7 +28,7 @@ export default function CateArt() {
       </div>
       {/* /w-full max-w-[300px] bg-white rounded-2xl p-6 flex flex-col items-center shadow-lg */}
       {/* 輪播區 */}
-      <div className="w-full max-w-[1100px] mx-auto mt-6">
+      <div className="w-full  mx-auto mt-6">
         <Swiper
           modules={[Navigation, EffectCoverflow]}
           effect="coverflow"
@@ -62,6 +62,6 @@ export default function CateArt() {
         </Swiper>
       </div>
     </div>
-    </div>
+    
   );
 }
