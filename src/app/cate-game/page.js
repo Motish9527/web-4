@@ -11,15 +11,15 @@ import Image from 'next/image';
 import Image21 from "@/../public/21.png";
 import Image22 from "@/../public/22.png";
 import Image23 from "@/../public/23.png";
+import Image24 from "@/../public/24.jpg";
 
 export default function CateGame() {
-  const images = [Image21, Image22, Image23 ];
+  const images = [Image21, Image22, Image23, Image24 ];
   const descriptions = [
-    "2023 TRPG自創角-管家雷文",
-    "2023 灌籃高手電影應援場(喜歡不打籃球的角色......)",
-    "2022 靈能二創聚會小卡",
-    
-
+    "Unreal - 《Differences》 故事設定及藍圖 ",
+    "Unuty - 《Stjerne》  劇本創作 古古黑客鬆大獎",
+    "Unuty - 《盲 愛》 小說改編及遊戲製作 ",
+    "Unuty - 《Escape》 劇本創作",
   ];
 
   // 第幾張

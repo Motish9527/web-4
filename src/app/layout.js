@@ -38,9 +38,9 @@ export default function RootLayout({ children }) {
             <Image src={SelfImg} alt="self profile" className="w-[80px] h-[80px] rounded-full 
             transition duration-200 ease-in-out transform hover:scale-105 hover:shadow-lg"  />
             </Link>
-            <h1 className="mt-2">Motish</h1>
+            <h1 className="mt-2">吳采蓁</h1>
 
-            <p className="max-w-[380px] text-center">一份不太正經的履歷。</p>
+            <p className="max-w-[380px] text-center">一份不太正經的簡歷。</p>
 
             {/* SocailLinks */}
             <div className="flex gap-2 my-5">
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
 
                 </div>
               </a>
-              <a href="https://x.com/realDonaldTrump" target="_blank " > 
+              <a href="https://x.com/realDonaldTrump" target="_blank "  > 
                 <div className=" w-[40px] h-[40px] rounded-full flex justify-center items-center border-1 border-gray-800
                 transition duration-200 ease-in-out transform hover:scale-105 hover:shadow-lg">
                 <Image src={XImg} alt="X page" width={22} height={22} className="flex justify-center items-center object-contain" />
