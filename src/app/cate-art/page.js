@@ -20,7 +20,7 @@ export default function CateArt() {
   const images = [Image1, Image2, Image3, Image5, Image6, Image7, Image8];
   const descriptions = [
     "2023 TRPG自創角-管家雷文",
-    "2023 灌籃高手電影應援場(我喜歡的角色不打籃球......)",
+    "2023 灌籃高手電影應援場(喜歡不打籃球的角色......)",
     "2022 靈能二創聚會小卡",
     "2024 外星人舞台Ivan(還沒畫完...我愛拖)",
     "2023 灌籃高手電影應援場(水戶洋平......)",

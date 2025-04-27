@@ -1,40 +1,92 @@
 import Image from "next/image";
-import SelfImg from "@/../public/self.jpg"; 
+import SelfImg from "@/../public/self.jpg";
+import Image0 from "@/../public/0.jpg";
+import Image12 from "@/../public/12.jpg";
+import Image13 from "@/../public/13.jpg";
+import Image14 from "@/../public/14.jpg";
+import Image15 from "@/../public/15.png";
+import Image16 from "@/../public/16.jpg";
+import Image17 from "@/../public/17.jpg";
 
 export default function Home() {
   return (
     <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-8 text-gray-800 sm:flex ">
-      
 
-      {/* 📄 主要內容區塊（左對齊） */}
-      <div className="w-full max-w-3xl flex flex-col gap-8 text-left">
 
-        {/* 📌 基本資料 */}
-        <section>
-          <h2 className="text-xl font-semibold border-b pb-1 mb-4">CATE interest</h2>
-          <ul className="space-y-1 text-sm leading-relaxed">
-            <li>一直很想睡覺的人</li>
-          </ul>
-        </section>
+      {/* 標題 + 說明 */}
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold text-amber-700 mb-2">興趣</h1>
+        <p className="text-gray-700 text-sm leading-relaxed">
+          是阿宅，所以都是跟宅相關的興趣
+          <br />
+          特別喜歡怪漫
+        </p>
+      </div>
 
-        {/* 📌 關於我 */}
-        <section>
-          <h2 className="text-xl font-semibold border-b pb-1 mb-4">關於我</h2>
-          <p className="text-sm leading-relaxed">
-            好想睡覺。
-          </p>
-        </section>
+      {/* 卡片區 (GRID) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
-        {/* 📌 經歷 / 參與作品 */}
-        <section>
-          <h2 className="text-xl font-semibold border-b pb-1 mb-4">經歷 / 參與作品</h2>
-          <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
-            <li>人生 ONLINE LEVEL：22</li>
-            <li>活著就很了不起</li>
-          </ul>
-        </section>
+        {/* 卡片1 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <video
+            src="/11.mp4"
+            controls
+            className="w-full h-full object-cover rounded-2xl"
+          />
+          <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+            弓道
+          </div>
+        </div>
+
+        {/* 卡片2 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <Image src={Image12} alt="睡覺" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            睡覺
+          </div>
+        </div>
+
+        {/* 卡片3 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <Image src={Image13} alt="電影" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            電影
+          </div>
+        </div>
+
+        {/* 卡片4 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <Image src={Image15} alt="道具1" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            道具製作
+          </div>
+        </div>
+
+        {/* 卡片5 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <Image src={Image16} alt="道具2" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            道具製作
+          </div>
+        </div>
+
+
+        {/* 卡片6 */}
+        <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
+                        transition-transform duration-300 hover:scale-105">
+          <Image src={Image0} alt="畫圖" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+            畫圖
+          </div>
+        </div>
 
       </div>
+
     </div>
   );
 }
