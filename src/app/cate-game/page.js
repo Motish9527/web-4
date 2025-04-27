@@ -8,24 +8,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
 import Image from 'next/image';
-import Image1 from "@/../public/1.png";
-import Image2 from "@/../public/2.jpg";
-import Image3 from "@/../public/3.png";
-import Image5 from "@/../public/5.jpg";
-import Image6 from "@/../public/6.png";
-import Image7 from "@/../public/7.png";
-import Image8 from "@/../public/8.png";
+import Image21 from "@/../public/21.png";
+import Image22 from "@/../public/22.png";
+import Image23 from "@/../public/23.png";
 
 export default function CateGame() {
-  const images = [Image1, Image2, Image3, Image5, Image6, Image7, Image8];
+  const images = [Image21, Image22, Image23 ];
   const descriptions = [
     "2023 TRPG自創角-管家雷文",
     "2023 灌籃高手電影應援場(喜歡不打籃球的角色......)",
     "2022 靈能二創聚會小卡",
-    "2024 外星人舞台Ivan(還沒畫完...我愛拖)",
-    "2023 灌籃高手電影應援場(水戶洋平......)",
-    "2023 灌籃高手電影應援場(一灌再灌)",
-    "2022 漫畫惡之華二創",
+    
+
   ];
 
   // 第幾張
@@ -33,10 +27,10 @@ export default function CateGame() {
 
   return (
     <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 pt-8 sm:flex overflow-auto">
-      
+
       {/* 標題 */}
       <div className="flex flex-col w-full">
-        <h1 className="text-xl font-semibold border-b pb-1 mb-4">ART</h1>
+        <h1 className="text-xl font-semibold border-b pb-1 mb-4">GAME</h1>
       </div>
 
       {/* 輪播區 */}
@@ -59,11 +53,11 @@ export default function CateGame() {
             modifier: 2.5,
             slideShadows: false,
           }}
-          className="w-full h-[400px]"
+          className="w-full h-[300px] [&_.swiper-button-next]:text-gray-800 [&_.swiper-button-prev]:text-gray-800"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index} className="flex justify-center items-center">
-              <div className="relative w-[220px] h-[320px] rounded-2xl overflow-hidden shadow-lg 
+              <div className="relative w-[320px] h-[220px] rounded-2xl overflow-hidden shadow-lg 
                               transition-all duration-500">
                 <Image
                   src={img}
@@ -78,9 +72,13 @@ export default function CateGame() {
       </div>
 
       {/* 作品文字 */}
-      <div className=" text-gray-800 text-center px-4 font-bold">
-        {descriptions[currentSlide]}
+      <div className='w-full h-[200px] border-2 border-gray-800 rounded-2xl -mt-12
+      flex flex-col justify-center items-center '>
+        <div className=" text-gray-800 text-center px-4 font-bold">
+          {descriptions[currentSlide]}
+        </div>
       </div>
+
     </div>
   );
 }

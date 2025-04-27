@@ -7,6 +7,7 @@ import Image14 from "@/../public/14.jpg";
 import Image15 from "@/../public/15.png";
 import Image16 from "@/../public/16.jpg";
 import Image17 from "@/../public/17.jpg";
+import Image18 from "@/../public/18.jpg";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
 
       {/* 標題 + 說明 */}
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-amber-700 mb-2">興趣</h1>
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">興趣</h1>
         <p className="text-gray-700 text-sm leading-relaxed">
           是阿宅，所以都是跟宅相關的興趣
           <br />
@@ -34,7 +35,7 @@ export default function Home() {
             controls
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute top-2 left-2 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
             弓道
           </div>
         </div>
@@ -43,7 +44,7 @@ export default function Home() {
         <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
                         transition-transform duration-300 hover:scale-105">
           <Image src={Image12} alt="睡覺" className="w-full h-[180px] object-cover" />
-          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
             睡覺
           </div>
         </div>
@@ -51,9 +52,9 @@ export default function Home() {
         {/* 卡片3 */}
         <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
                         transition-transform duration-300 hover:scale-105">
-          <Image src={Image13} alt="電影" className="w-full h-[180px] object-cover" />
-          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
-            電影
+          <Image src={Image18} alt="漫畫" className="w-full h-[180px] object-cover" />
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
+            漫畫
           </div>
         </div>
 
@@ -61,7 +62,7 @@ export default function Home() {
         <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
                         transition-transform duration-300 hover:scale-105">
           <Image src={Image15} alt="道具1" className="w-full h-[180px] object-cover" />
-          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
             道具製作
           </div>
         </div>
@@ -70,7 +71,7 @@ export default function Home() {
         <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
                         transition-transform duration-300 hover:scale-105">
           <Image src={Image16} alt="道具2" className="w-full h-[180px] object-cover" />
-          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
             道具製作
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function Home() {
         <div className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-md 
                         transition-transform duration-300 hover:scale-105">
           <Image src={Image0} alt="畫圖" className="w-full h-[180px] object-cover" />
-          <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-600 text-white text-xs px-2 py-1 rounded">
             畫圖
           </div>
         </div>
