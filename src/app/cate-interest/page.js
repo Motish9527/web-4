@@ -11,7 +11,7 @@ import Image18 from "@/../public/18.jpg";
 
 export default function Home() {
   return (
-    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-8 text-gray-800 sm:flex ">
+    <div className="hidden w-full h-full bg-white flex-col justify-start items-center rounded-2xl px-6 py-8 overflow-auto text-gray-800 sm:flex ">
 
 
       {/* 標題 + 說明 */}
